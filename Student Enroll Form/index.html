@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Enrollment Form</h1>
+        <form id="enrollmentForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+
+            <label for="image">Image link</label>
+            <input type="url" id="image" name="image">
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Skills</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="java" name="skills" value="Java" checked>
+                <label for="java">Java</label>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" id="enrollBtn">Enroll Student</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+        <div id="enrolledStudents">
+            <h2>Enrolled Students</h2>
+            <div id="studentsList">
+                <div class="student">
+                    <div class="description">
+                        <p>Prabhas</p>
+                        <p>Male</p>
+                        <p>prabhasking1@email.com</p>
+                        <p><a href="http://www.Deepak.com" target="_blank">www.Prabhas.com</a></p>
+                        <p>Java,HTML,css</p>
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/100" alt="Prabhas">
+                    </div>
+                </div>
+                
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+#enrollBtn {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+#enrolledStudents {
+    margin-top: 50px;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7ffe7;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.description {
+    flex: 1;
+}
+
+.image img {
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .student {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .description {
+        text-align: center;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    #enrollBtn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
